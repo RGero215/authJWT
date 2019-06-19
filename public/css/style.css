@@ -1,0 +1,164 @@
+.btn, img{
+    margin-right: 10px;
+}
+
+.nav-item form input {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 20px;
+}
+
+footer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    clear:both;
+    clear:left;
+    clear:right;
+}
+
+.vote-down, .vote-up {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.posts-index {
+   color: black 
+}
+.post-picture-label {
+    margin-bottom: -1px;
+}
+
+.comment-button {
+    margin-top: 10px;
+    margin-right: -6px;
+    margin-bottom: 20px;
+}
+
+.reply-button {
+    margin-right: -0.5px;
+}
+
+.comment-card {
+    margin-bottom: 5px;
+}
+
+.comment-username {
+    margin-right: 10px;
+}
+
+.user-div{
+    text-align: center;
+}
+
+.subcomments {
+    float: right;
+    clear:both;
+    clear:left;
+    clear:right;
+}
+
+.comments {
+    clear:both;
+    clear:left;
+    clear:right;
+}
+
+
+
+.user {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 30px;
+
+  }
+
+  .card-img-top {
+    height: 15rem;
+    object-fit: cover;
+}
+
+  .gallery {
+      display: inline-block;
+      vertical-align: top
+  }
+
+  .user-info {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+  
+  .profile {
+    background-image: url('http://placehold.it/400x200');
+  }
+
+  #signup-image {
+    border-radius: 50%;
+  }
+
+  #user-image {
+    border-radius: 50%;
+    margin-top: -13px;
+    margin-bottom: -17px;
+  }
+
+  h3.comment {
+      margin-left: 15px;
+  }
+
+
+  .center-image.custom-file-label{
+      text-align: center;
+      background-image: url('../images/account.png');
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-position: center center;
+      background-size: cover;
+      border: solid 1px black;
+
+  }
+
+
+div.fileinputs {
+    position: relative;
+}
+
+div.fakefile {
+	position: absolute;
+	top: 0px;
+	left: 100px;
+    z-index: 1;
+    margin: 0 auto; 
+}
+
+input.file {
+    position: relative;
+    left: 100px;
+	text-align: right;
+	opacity: 0;
+    z-index: 2;
+    border: solid 1px black;
+}
+
+.table {
+    margin-top: 100px;
+}
+
+
+@media only screen and (max-width: 1112px) {
+    .nav-item form input {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 20px;
+        border: solid black 1px;
+    }
+}

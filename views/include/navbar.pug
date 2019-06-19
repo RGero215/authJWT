@@ -1,0 +1,26 @@
+nav(class="navbar navbar-expand-lg navbar-light bg-light") 
+  a(class="navbar-brand" href="/") AuthJTW.js
+
+  button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation") 
+    span(class="navbar-toggler-icon") 
+    
+  div(class="collapse navbar-collapse" id="navbarNav")
+    if currentUser
+        ul(class="nav nav-pills nav-fill ml-auto")
+            li(class='nav-item')
+                a(href="/posts/new" class="btn btn-outline-primary navbar-btn") Create  
+            li(class="nav-item")
+                a(class="btn btn-primary navbar-btn" href="/logout") LOG OUT
+            li(class="nav-item")
+                if userImage 
+                  a(class="nav-link" href="/profile")
+                      img(src=`/image/${userImage}` width="50" height="50" id='user-image'  class="d-inline-block align-top" alt="")
+                else
+                  a(class="nav-link" href="/profile")
+                      img(src='/static/images/account.png' width="50" height="50" id='user-image'  class="d-inline-block align-top" alt="")
+    else
+        ul(class="nav nav-pills nav-fill ml-auto") 
+            li(class="nav-item") 
+                a(class="btn btn-outline-primary navbar-btn" href="/login") LOG IN
+            li(class="nav-item")
+                a(class="btn btn-primary navbar-btn" href="/signup") SIGN UP
